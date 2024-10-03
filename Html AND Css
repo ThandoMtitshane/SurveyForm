@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+     <link rel="stylesheet" href="styles.css"></link>
+      <meta charset="UTF-8">
+    <title>Siyathuthuka Education Form</title>
+      </head>
+      <body>
+    <h1 id="title">Siyathuthuka Education Survey Form</h1>
+    <p id="description">Thank you for taking your time to help us to improve our Platform</p>
+    <p id="slogan" class="slogan">Empowering Future Minds: Master Maths, Physics, Accounting and Economics.</p>
+    <form id="survey-form">
+      <fieldset>
+   <label id="name-label" for="name">Name: <input id="name" type="text" required placeholder="john smith"></input></label>
+   <label id="username-label" for="username">UserName: <input id="username" type="text" required placeholder="229878873"/><label>
+   <label id="email-label" for="email">Email: <input id="email" type="email" required placeholder="thandomtitshane@gmail.com"></input></label>
+   <label id="number-label" for="number">Age (optional): <input id="number" type="number" min=10 max=100 placeholder=20>
+   <label for="dropdown">Which Grade are you in? <select id="dropdown">
+     <option>Select an option</option>
+     <option>Grade 8</option>
+     <option>Grade 9</option>
+     <option>Grade 10</option>
+     <option>Grade 11</option>
+     <option>Grade 12</option>
+     <option>Parent</option> 
+     </select>
+       </label><label>How often do you use Siyathuthuka Education?<label>
+       <label for="everyday"><input id= "everyday" type="radio" name="often" class="inline" value="everyday" checked></input>Everyday</label>
+       <label for="atleast"><input id="atleast" type="radio" name="often" value="atleast-20Hours-per-week" class="inline"/> Atleast 20 hours per week</label>
+       <label for="not"><input id="not" type="radio" name="often" value="I am not sure" class="inline"/>I am not sure</label>
+       <label>Which subject(s) do you think we must add on our website</label>
+       <label for="Hl"><input type="checkbox" class="inline" value="languages" id="Hl" /> All Languages</label>
+       <label for="history"><input type="checkbox" class="inline" value="history" id="history"/> History</label>
+       <label for="Geography"><input type="checkbox" class="inline" value="geograohy" id="geography"/> Geography</label>
+       <label for="Technical-Maths"><input type="checkbox" class="inline" value="Technical-Maths" id="Technical-Maths"/> Technical Maths</label>
+       <label for="Business-Studies"><input type="checkbox" class="inline" value="Business-Studies" id="Business-Studies"/> Business Studies</label>
+       <label for="life-sciences"><input type="checkbox" class="inline" value="Life-sciences" id="life-sciences"/> Life Sciences</label>
+       <label for="comment">Comments: <textarea id="comment" placeholder="Improve..." rows=5 cols=40></textarea></label>
+       <label for="verify"><input id="verify" type="checkbox" class="inline" value="verify" required /> I am not a robort</label>
+       <input id ="submit" type="submit" value="Submit">
+        </fieldset>
+    </form>
+        </body>
+        <footer>
+  <p>&copy; 2024 Siyathuthuka Education. All rights reserved.</p>
+  <p><a href="https://www.freecodecamp.org/229878873">Thando Mtitshane</a></p>
+</footer>
+    </html>
+CSS
+.slogan {
+  font-family:"Roboto",sns-serif;
+  font-size: 1rem;
+   font-weight:bold;
+   font-style:italic;
+   text-align:center;
+   color:#333;
+}
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+.inline{
+  display: inline; 
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+input, textarea {
+  background-color: white;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+}
+input[type="submit"] {
+  background-color: #4CAF50; /* Green background */
+  color: white;              /* White text */
+  padding: 10px 20px;        /* Padding around the button */
+  border: none;              /* Remove borders */
+  border-radius: 5px;        /* Rounded corners */
+  cursor: pointer;           /* Pointer cursor on hover */
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+footer {
+  background-color: #333;      /* Dark background */
+  color: white;                /* White text */
+  text-align: center;          /* Center the text */
+  padding: 20px;               /* Padding inside the footer */
+  position: relative;          /* To ensure the footer stays below content */
+  bottom: 0;
+  width: 100%;                 /* Full width */
+}
+
+footer p {
+  margin: 0;                   /* Remove default paragraph margins */
+}
+body {
+  background-image: url('https://cdn.wallpapersafari.com/47/95/3Lwnjz.jpg');
+  background-size: cover;     
+  background-position: center; 
+  height: 100vh;              
+}
+h1 {
+  color:Black;
+}
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+  background-color:white
+}
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+input, textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+}
+a {
+  color: blue;            
+  text-decoration: none;  
+}
+
+/* Hover state */
+a:hover {
+  color: red;             
+  text-decoration: underline; 
+}
